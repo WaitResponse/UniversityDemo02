@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- true 表示当前项目处于开发模式 -->
+	<constant name="struts.devMode" value="true"/>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant><!-- 调用动态方法 -->
+    <package name="default" namespace="/" extends="struts-default">
+		<action name="login1" class="com.gem.structs.actions.loginAction1"></action>
+   	
+    	<!-- 默认有.action -->
+    
+    	<action name="login2" class="com.gem.structs.actions.loginAction2">
+    		<result name="success" >index.jsp</result>
+    		<result name="login">/login.jsp</result>
+    	</action>
+    	 
+    <!-- <action name="dmi" class="com.gem.structs.actions.DMIAction" ></action>   	
+         <action name="helloA" class="com.gem.structs.actions.DMIAction" method="helloA"></action>  	   	
+   		<action name="helloB" class="com.gem.structs.actions.DMIAction" method="helloB"></action> -->	
+   	<action name="*" class="com.gem.structs.actions.DMIAction" method="{1}"/>
+ 	<!-- method调用指定方法 -->	
+<!--     	<action name="*_*" class="com.gem.structs.actions.{2}" method="{1}"/>
+ -->    </package>
+
+   
+
+    <!-- Add packages here -->
+
+</struts>
