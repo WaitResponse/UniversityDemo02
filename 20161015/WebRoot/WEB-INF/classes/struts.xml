@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- true 表示当前项目处于开发模式 -->
+	<constant name="struts.devMode" value="true"/>
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="hello" class="com.gem.structs.actions.HelloAction">
+			<result type="redirectAction">
+				<param name="actionName">hello2</param>
+				<param name="namespcae">/</param>		
+			</result>		
+		</action>	
+		<!-- type可以省略 -->
+		<!-- chain表示服务器跳转 -->
+		<action name="hello2" class="com.gem.structs.actions.HelloAction2">
+			<result >/page02.jsp</result>		
+		</action>
+	</package>
+</struts>
