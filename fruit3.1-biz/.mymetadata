@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="fruti3.1-biz"
+  id="myeclipse.1503278707214"
+  context-root="/fruit3.1"
+  j2ee-spec="5.0"
+  archive="fruti3.1-biz.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

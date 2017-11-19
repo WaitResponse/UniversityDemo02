@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <servlet-name>preIndex</servlet-name>
+    <servlet-class>com.gem.fruit.servlets.PreIndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>preIndex</servlet-name>
+    <url-pattern>/preIndex.html</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>detail</servlet-name>
+    <servlet-class>com.gem.fruit.servlets.DetailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>detail</servlet-name>
+    <url-pattern>/detail.html</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>add</servlet-name>
+    <servlet-class>com.gem.fruit.servlets.AddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add</servlet-name>
+    <url-pattern>/add.html</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>del</servlet-name>
+    <servlet-class>com.gem.fruit.servlets.DelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>del</servlet-name>
+    <url-pattern>/del.html</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>update</servlet-name>
+    <servlet-class>com.gem.fruit.servlets.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>update</servlet-name>
+    <url-pattern>/update.html</url-pattern>
+  </servlet-mapping>
+</web-app>
