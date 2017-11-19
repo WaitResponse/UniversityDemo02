@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="fruit3.0-serclet"
+  id="myeclipse.1503278707214"
+  context-root="/fruit3.0"
+  j2ee-spec="5.0"
+  archive="fruit3.0-serclet.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
