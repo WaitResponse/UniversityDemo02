@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>com.gem.qqzone.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<servlet>
+		<servlet-name>SystemServlet</servlet-name>
+		<servlet-class>com.gem.qqzone.servlets.SystemServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>com.gem.qqzone.servlets.UserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/user.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>com.gem.qqzone.servlets.IndexServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/index.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>TopicServlet</servlet-name>
+		<servlet-class>com.gem.qqzone.servlets.TopicServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TopicServlet</servlet-name>
+		<url-pattern>/topic.do</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
