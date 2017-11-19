@@ -1,0 +1,32 @@
+#div0{
+	width:100%;
+}
+.tbl{
+	width:70%;
+	margin-left:15%;
+	margin-top:40px;
+	border:1px solid gray;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	background-color: linen;
+}
+*{
+	font-size:15px;
+}
+#div1{
+	margin-left:76%;
+	margin-top:15px;
+}
+.btn{
+	background-color: teal;
+}
+table tr{
+	height:40px;
+	border:1px solid gray;
+}
+a:link {
+    color:#FF0000;
+    text-decoration:underline;
+    }

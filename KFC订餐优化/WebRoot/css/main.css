@@ -1,0 +1,27 @@
+table table td{
+	text-align:center;
+}
+table table td img{
+	width:150px;
+	height:140px;	
+}
+#div0{
+	width:100%;
+}
+.tbl{
+	width:80%;
+	margin-left:10%;
+}
+.tbl2{
+	
+}
+.tbl2 tr,.tbl2 td{
+	bordet:0px dotted white;
+}
+.gname_style{
+	heigth:30px;
+}
+.btn{
+	background-color:darkorange;
+	border-radius:5px;
+}
