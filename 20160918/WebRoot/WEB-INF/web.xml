@@ -1,0 +1,11 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+<servlet>
+<servlet-name>hello1</servlet-name>
+<servlet-class>com.gem.servlets.Hello1Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>hello1</servlet-name>
+<!--  url-pattern中的值一定要以斜杠开头  -->
+<url-pattern>/hello1.do</url-pattern>
+</servlet-mapping>
+</web-app>
