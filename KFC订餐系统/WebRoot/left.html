@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>left</title>
+<style type="text/css">
+	dl,dt,dd,h5,p{
+	padding:0px;
+	margin:0px;
+	font-size:10pt;
+	}
+	dl{
+		width:80%;
+		height:auto;
+		display:block;
+		overflow:hidden;
+		margin:0 auto;
+		font-size:10pt;
+		line-height:160%;
+		}
+	dt,dt a{
+	width:100%;
+	height:auto;
+	display:block;
+	font-weight: bold;
+	color:#333;
+	font-size:10.5pt;
+	cursor:pointer;
+	text-decoration: none;
+	}
+	dt a:hover{
+	text-decoration: underline;
+	color: #FF0000;
+	}
+	dd,p{
+	text-indent: 2em;
+	}
+	html,body{
+		heigth:100%;
+		
+	}
+	#div1{
+		margin-top:30px;
+		text-align:center;
+		background-color: greenyellow;
+	}
+	#div2{
+		text-align:center;
+		margin-top:50px;
+		background-color: gold;
+	}
+	#div3{
+		text-align:center;
+		margin-top:50px;
+		background-color: lightskyblue;
+	}
+	#cartItem{
+		float:left;
+		margin-top:50px;
+	}
+	.btn{
+		width:220px;
+		height:50px;
+		background-color: tomato;
+	}
+</style>
+<script>
+var number=3; //定义条目数
+
+function LMYC() {
+var lbmc;
+    for (i=1;i<=number;i++) {
+        lbmc = eval('LM' + i);
+        lbmc.style.display = 'none';
+    }
+}
+ 
+function ShowFLT(i) {
+    lbmc = eval('LM' + i);
+    if (lbmc.style.display == 'none') {
+        LMYC();
+        lbmc.style.display = '';
+    }
+    else {
+        lbmc.style.display = 'none';
+    }
+}
+
+</script>
+<script type="text/javascript">
+var __aObj=document.getElementsByTagName("a");
+var __length=__aObj.length;
+for(var i=0;i<__length;i++){
+	__aObj[i].onfocus=function(){this.blur();}
+}
+</script>
+
+</head>
+
+<body>
+<div id="div1">
+
+       <dl>
+         <dt onClick=javascript:ShowFLT(1) href="javascript:void(null)"><a href="javascript:;">正餐</a></dt>
+          <dd id=LM1 style="DISPLAY: none">
+          <h5>牛肉粥 </h5>
+          <h5>皮蛋瘦肉粥 </h5>
+          <h5>雪菜肉丝粥 </h5>
+          <h5>太阳蛋</h5>
+          <h5>三茹春卷</h5>
+		</dd>
+	 </dl>
+</div>		
+
+<div id="div2">
+		<dl>
+        <dt onClick=javascript:ShowFLT(2) href="javascript:void(null)"><a href="javascript:;">午餐</a></dt>
+          <dd id=LM2 style="DISPLAY: none">
+          <h5>吮指原味鸡</h5>
+          <h5>吮指原味鸡</h5>
+          <h5>吮指原味鸡</h5>
+          <h5>吮指原味鸡</h5>
+          <h5>吮指原味鸡</h5>
+        </dd>
+        </dl>
+</div>
+
+<div id="div3">    
+        <dl>
+       <dt onClick=javascript:ShowFLT(3) href="javascript:void(null)"><a href="javascript:;">夜宵</a></dt>
+          <dd id=LM3 style="DISPLAY: none">
+           <h5>香辣鸡腿堡</h5>
+           <h5>香辣鸡腿堡</h5>
+           <h5>香辣鸡腿堡</h5>
+           <h5>香辣鸡腿堡</h5>
+           <h5>香辣鸡腿堡</h5>
+          </dd>
+		</dl>
+</div> 
+<div id="cartItem">
+	<input type="button" name="cartitem" value="查看购物车" class="btn"/>
+</div>
+
+     
+</body>
+</html>
+
